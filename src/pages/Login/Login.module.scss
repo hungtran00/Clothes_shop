@@ -1,0 +1,173 @@
+.login {
+    max-width: 100%;
+    width    : 120rem;
+    margin   : 10rem auto;
+    position : relative;
+    padding  : 1rem;
+
+    &__title {
+        font-size    : 2.6rem;
+        font-weight  : 600;
+        text-align   : center;
+        margin-bottom: 5rem;
+    }
+
+    &__container {
+
+        padding      : 8rem 4rem;
+        border-radius: 1rem;
+        width        : 100%;
+        box-shadow   : 0 1px 15px rgb(0 0 0 / 12%);
+
+    }
+
+    &__group {
+        display    : flex;
+        align-items: center;
+        padding    : 2rem 0;
+
+        &>label {
+            font-size   : 1.6rem;
+            margin-right: 1rem;
+        }
+
+        &>input {
+            padding      : 0 2rem;
+            height       : 4rem;
+            flex         : 1;
+            border-radius: 1rem;
+            outline-color: var(--primary-color);
+        }
+
+    }
+
+    &__service {
+        display        : flex;
+        justify-content: space-between;
+
+        & button {
+            height          : 4rem;
+            min-width       : 10rem;
+            border-radius   : 1rem;
+            border          : none;
+            background-color: var(--primary-color);
+            transition      : all 0.3s;
+            cursor          : pointer;
+
+            &:hover {
+                background-color: black;
+                color           : var(--white-color);
+                transform       : translateY(-0.5rem);
+            }
+        }
+
+
+    }
+
+    &__register>span {
+        font-size: 1.3rem;
+        padding  : 0 1rem;
+    }
+}
+
+.register {
+    position        : absolute;
+    padding         : 8rem 4rem;
+    border-radius   : 1rem;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    z-index         : 1;
+    min-height      : 45rem;
+    background-color: white;
+    box-shadow      : 0 1px 15px rgb(0 0 0 / 12%);
+    animation       : showForm 0.3s ease 1;
+
+    &__message {
+
+        color    : red;
+        font-size: 1.3rem;
+    }
+}
+
+.customer {
+    &__title {
+        font-size    : 2.6rem;
+        font-weight  : 600;
+        text-align   : center;
+        margin-bottom: 5rem;
+    }
+
+    &__email {
+        font-size: 1.6rem;
+
+        >span {
+            padding-left: 5.6rem;
+        }
+    }
+
+    &__username {
+        font-size: 1.6rem;
+
+        >span {
+            padding-left: 2rem;
+        }
+    }
+
+    & button {
+        height          : 4rem;
+        min-width       : 10rem;
+        border-radius   : 1rem;
+        border          : none;
+        background-color: var(--primary-color);
+        transition      : all 0.3s;
+        margin-top      : 2rem;
+        cursor          : pointer;
+
+        &:hover {
+            background-color: black;
+            color           : var(--white-color);
+            transform       : translateY(-0.5rem);
+        }
+    }
+}
+
+@keyframes showForm {
+    from {
+        opacity  : 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity  : 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:500px) {
+    .login {
+        &__register>span {
+            display: none;
+        }
+
+        &__group>label {
+            display: none;
+        }
+
+
+        &__service>button {
+            min-width: 6rem;
+        }
+
+        &__container {
+            padding: 8rem 0;
+
+        }
+
+        &__register>button {
+            min-width: 6rem;
+
+        }
+
+    }
+}

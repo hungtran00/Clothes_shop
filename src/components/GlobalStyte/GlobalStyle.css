@@ -1,0 +1,28 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,600&display=swap');
+
+:root {
+    --primary-color: rgb(223, 176, 62);
+    --text-color   : #333;
+    --white-color  : rgb(255, 255, 255);
+    --header-height: 6.5rem;
+}
+
+body {
+    position   : relative;
+    font-family: 'Libre Franklin', sans-serif;
+    ;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    scroll-behavior: smooth;
+    box-sizing     : border-box;
+    text-decoration: none;
+    color          : var(--black-color);
+}

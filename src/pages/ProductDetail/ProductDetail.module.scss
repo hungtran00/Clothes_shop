@@ -1,0 +1,103 @@
+.product {
+    width        : 100%;
+    max-width    : 120rem;
+    margin       : auto;
+    margin-top   : 10rem;
+    display      : flex;
+    position     : relative;
+    // height    : 70vh;
+
+    &__img {
+        position     : relative;
+        width        : 50%;
+        height       : 100%;
+        border-radius: 10px;
+
+        &>img {
+            height       : 100%;
+            width        : 100%;
+            object-fit   : cover;
+            border-radius: 10px;
+        }
+    }
+
+    &__title {
+        color        : var(--black-color);
+        font-size    : 3.2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__price {
+        color        : var(--text-color);
+        font-size    : 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__detail {
+        color        : var(--text-color);
+        font-size    : 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__service {
+        &>button {
+            background-color: var(--primary-color);
+            border          : none;
+            padding         : 0.5rem 1rem;
+            border-radius   : 2rem;
+            margin-bottom   : 2rem;
+            cursor          : pointer;
+            transition      : all 0.3s;
+
+            &:hover {
+                background-color: black;
+                color           : white;
+                transform       : translateY(-0.2rem);
+            }
+        }
+
+        &>input {
+
+            text-align    : center;
+            width         : 8rem;
+            padding-left  : 1.2rem;
+            padding-top   : 0.2rem;
+            padding-bottom: 0.2rem;
+            border-radius : 2rem;
+            margin-right  : 2rem;
+        }
+
+
+    }
+
+    &__category {
+        font-size: 1.6rem;
+
+        &>span {
+            color  : var(--primary-color);
+            padding: 1rem;
+        }
+    }
+
+    &__description {
+        width  : 50%;
+        padding: 2.5rem 4rem;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .product {
+
+        flex-direction: column;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__description {
+            width: 100%;
+        }
+    }
+}
