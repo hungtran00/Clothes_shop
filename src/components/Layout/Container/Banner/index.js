@@ -13,7 +13,7 @@ function Banner() {
                     Welcome
                 </div>
                 <div className={cx('bannertop__content')}>
-                    This page designed by Nguyn :3. If you see it. Have a good day
+                    This page designed by HungTran::3. If you see it. Have a good day
                 </div>
                 <button onClick={scrollToProduct} className={cx('bannertop__button')}>SHOP NOW</button>
             </div>

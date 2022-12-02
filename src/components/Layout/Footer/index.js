@@ -14,7 +14,7 @@ function Footer() {
             <div className={cx('footer__content')}>
                 <ul className={cx('footer__list')}>
                     <li className={cx('footer__title')}>Shopee</li>
-                    <li className={cx('footer__item')}>Shoppe is a powerful shop theme created by Nguyn.
+                    <li className={cx('footer__item')}>Shoppe is a powerful shop theme created by HungTran
                         <br />
                         It’s powered by WooCommerce and is highly customizable.
 
