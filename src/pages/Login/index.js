@@ -1,7 +1,7 @@
 import styles from './Login.module.scss'
 
 import classNames from "classnames/bind";
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAccount } from '../../reducers/account/accountSlice';
@@ -31,7 +31,7 @@ function Login() {
 
         <Fragment>
             {
-                account.data.length == 0 ? <Loading /> :
+                account.data.length === 0 ? <Loading /> :
                     <div className={cx("login")}>
                         <div className={cx('login__title')}>My Account</div>
 
@@ -69,19 +69,19 @@ function Login() {
                                     <div className={cx('login__service')}>
                                         <button onClick={
                                             () => {
-                                                if (userNameLogin.length != 0 || passwordLogin.length != 0) {
+                                                if (userNameLogin.length !== 0 || passwordLogin.length !== 0) {
 
-                                                    if (nameRegex.test(userNameLogin) == false) {
+                                                    if (nameRegex.test(userNameLogin) === false) {
                                                         setMessage("Username không hợp lệ")
                                                     }
-                                                    else if (passRegex.test(passwordLogin) == false) {
+                                                    else if (passRegex.test(passwordLogin) === false) {
                                                         setMessage("Password ít nhất 6 ký tự bao gồm 1 chữ cái viết hoa, 1 số")
                                                     }
                                                     else {
                                                         const temp = account.data.filter(item => {
-                                                            return item.username.toUpperCase() == userNameLogin.toUpperCase() && item.password == passwordLogin
+                                                            return item.username.toUpperCase() === userNameLogin.toUpperCase() && item.password === passwordLogin
                                                         })
-                                                        if (temp.length != 0) {
+                                                        if (temp.length !== 0) {
                                                             sessionStorage.setItem('isLogin', true)
 
                                                             setLogin("true")
@@ -129,21 +129,21 @@ function Login() {
                             <div className={cx('login__service')}>
                                 <button onClick={() => {
 
-                                    if (email.length != 0 || userNameRegister.length != 0 || passwordRegister.length != 0) {
-                                        if (emailRegex.test(email) == false) {
+                                    if (email.length !== 0 || userNameRegister.length !== 0 || passwordRegister.length !== 0) {
+                                        if (emailRegex.test(email) === false) {
                                             setMessage("Email không hợp lệ")
                                         }
-                                        else if (nameRegex.test(userNameRegister) == false) {
+                                        else if (nameRegex.test(userNameRegister) === false) {
                                             setMessage("Username không hợp lệ")
                                         }
-                                        else if (passRegex.test(passwordRegister) == false) {
+                                        else if (passRegex.test(passwordRegister) === false) {
                                             setMessage("Password ít nhất 6  ký tự bao gồm 1 chữ cái viết hoa, 1 số")
                                         }
                                         else {
                                             const temp = account.data.filter(item => {
-                                                return item.username.toUpperCase() == userNameRegister.toUpperCase()
+                                                return item.username.toUpperCase() === userNameRegister.toUpperCase()
                                             })
-                                            if (temp.length != 0) {
+                                            if (temp.length !== 0) {
                                                 setMessage("User name đã tồn tại")
                                             }
                                             else {

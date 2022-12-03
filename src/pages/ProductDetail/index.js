@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import { getProduct } from "../../reducers/product/productSlice"
@@ -28,7 +28,7 @@ function ProductDetail() {
         <div className={cx("product")}>
             {
                 product.data.map(item => {
-                    if (item._id == params.id)
+                    if (item._id === params.id)
                         return (<Fragment key={item._id} >
                             <div className={cx('product__img')}>
                                 <img src={require(`../../../public/img/product/${item.img}`)} />

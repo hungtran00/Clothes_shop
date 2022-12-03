@@ -28,13 +28,13 @@ function Cart() {
                     <li>SUBTOTAL</li>
                 </ul>
                 {
-                    cart.cartItem.length == 0 ?
+                    cart.cartItem.length === 0 ?
                         <div className={cx('cart__empty')}>
                             <span>Your cart is empty go</span>
                             <Link to='/shop'>SHOP NOW</Link>
                         </div>
                         : cart.cartItem.map(item => {
-                            if (cart.cartItem.length != 0)
+                            if (cart.cartItem.length !== 0)
                                 return (
                                     <ul key={item._id} className={cx('cart__item')}>
                                         <li className={cx('cart__img')}>
@@ -61,13 +61,13 @@ function Cart() {
             </div>
             <div className={cx('cart__contentReponsive')}>
                 {
-                    cart.cartItem.length == 0 ?
+                    cart.cartItem.length === 0 ?
                         <div className={cx('cart__empty')}>
                             <span>Your cart is empty go</span>
                             <Link to='/shop'>SHOP NOW</Link>
                         </div>
                         : cart.cartItem.map(item => {
-                            if (cart.cartItem.length != 0)
+                            if (cart.cartItem.length !== 0)
                                 return (
                                     <ul key={item._id} className={cx('cartRepon__item')}>
                                         <li className={cx('cartRepon__img')}>

@@ -24,14 +24,14 @@ function Shop() {
         data?.map(item => {
             dataType.push(item)
         })
-        if (dataType.length != 0)
+        if (dataType.length !== 0)
             setData(dataType)
     }
     const handleAddToCart = (product) => {
         dispatch(addToCart(product))
     }
     const HandleRenderProduct = () => {
-        const loop = data.length != 0 ? data : product.data
+        const loop = data.length !== 0 ? data : product.data
         return (
             <div className={cx('product')}>
                 {
@@ -74,7 +74,7 @@ function Shop() {
 
 
             <div className={cx('content')}>
-                {product.data.length != 0 ? <HandleRenderProduct /> : <Loading />}
+                {product.data.length !== 0 ? <HandleRenderProduct /> : <Loading />}
 
             </div>
             <div className={cx('side__bar')}>

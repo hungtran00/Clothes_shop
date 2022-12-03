@@ -2,9 +2,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classNames from 'classnames/bind'
 import styles from './Header.module.scss'
-import { faBars, faXmark, faLocationDot, faUserTie, faEnvelope, faHeart, faCartShopping, faL } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faLocationDot, faUserTie, faEnvelope, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteToCart } from '../../../reducers/cart/cartSlice'
 

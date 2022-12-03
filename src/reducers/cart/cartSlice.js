@@ -42,12 +42,12 @@ const cartSlice = createSlice({
             const actionCart = sessionStorage.getItem('action').toString()
 
             if (itemIndex >= 0) {
-                if (actionCart && actionCart == 'true')
+                if (actionCart && actionCart === 'true')
                     state.cartItem[itemIndex].cartQuanlity += 1
-                if (actionCart && actionCart == 'false') {
+                if (actionCart && actionCart === 'false') {
                     if (state.cartItem[itemIndex].cartQuanlity > 0) {
                         state.cartItem[itemIndex].cartQuanlity -= 1
-                        if (state.cartItem[itemIndex].cartQuanlity == 0)
+                        if (state.cartItem[itemIndex].cartQuanlity === 0)
                             state.cartItem.splice(itemIndex, 1)
                     }
 
