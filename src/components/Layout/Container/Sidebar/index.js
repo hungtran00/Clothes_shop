@@ -55,7 +55,7 @@ function Sidebar(props) {
     const HandleRenderRad = () => {
         return category.map((item, index) => {
             const className = `category__content__${item}`
-            if (item.name != "All")
+            if (item.name !== "All")
                 return (
                     <div key={index} className={cx(className)}>
                         <input type='radio' name="type" defaultChecked={check.indexOf(item.id) === -1 ? false : true}
@@ -69,7 +69,7 @@ function Sidebar(props) {
                                 }
 
                                 const newData = product.data.filter(product => {
-                                    return product.category == item.name
+                                    return product.category === item.name
                                 })
                                 sendData(newData)
                                 setDataCategory(newData)
@@ -81,7 +81,7 @@ function Sidebar(props) {
             else
                 return (
                     <div key={index} className={cx(className)}>
-                        <input type='radio' name="type" defaultChecked={check.indexOf(item.id) == -1 ? false : true}
+                        <input type='radio' name="type" defaultChecked={check.indexOf(item.id) === -1 ? false : true}
                             onChange={() => {
                                 const currentIndex = check.indexOf(item.id)
                                 const newCheck = []
@@ -127,7 +127,7 @@ function Sidebar(props) {
                 <HandleRenderRad />
             </div>
         </div>
-        <div className={cx('sidebar__price')}>
+        {/* <div className={cx('sidebar__price')}>
             <input type='range' min='1' max='1000' onClick={(e) => {
                 const value = e.target.value
 
@@ -144,7 +144,7 @@ function Sidebar(props) {
 
             }} />
             <span>${valuePrice}.00</span>
-        </div>
+        </div> */}
         <div className={cx('sidebar__color')}>
             <div className={cx('color__title')}>Products color</div>
             <div className={cx('color__content')}>
@@ -152,7 +152,7 @@ function Sidebar(props) {
                     color.map((item) => {
                         return (<div key={item.id} onClick={() => {
                             const newData = product.data.filter(product => {
-                                return product.color.toUpperCase() == item.name.toUpperCase()
+                                return product.color.toUpperCase() === item.name.toUpperCase()
                             })
                             sendData(newData)
                             setDataColor(newData)
@@ -169,7 +169,7 @@ function Sidebar(props) {
                     size.map((item) => {
                         return (<div key={item.id} onClick={() => {
                             const newData = product.data.filter(product => {
-                                return product.size.toUpperCase() == item.name
+                                return product.size.toUpperCase() === item.name
                             })
                             sendData(newData)
                             setDataSize(newData)
