@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+
+  list-style: none !important;
+}
+.login-title {
+  padding: 48px 0;
+  border-bottom: 1px solid #dedddc;
+  font-family: "Inter", sans-serif;
+}
+.login-title h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48.41px;
+}
+form .form-content {
+  padding-left: 500px;
+}
+form p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+}
+form .form-content input {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  display: inline-block;
+  width: 443px;
+  height: 54px;
+  background: rgba(33, 33, 33, 0.08);
+  border-radius: 4px 4px 0px 0px;
+  border: none;
+}
+form .form-content .register {
+ 
+  text-align: center;
+}
+form .form-content NavLink {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  background: #152aebcc;
+  display: inline;
+}
+form .form-content .login {
+  width: 470px;
+  display: flex;
+align-items: center;
+justify-content: flex-end;
+
+}
+form .form-content .btn-login {
+  margin-left:15px;
+  width: 121px;
+  padding:10px;
+  border-radius: 50px;
+  background: #6200ee;
+  /* 04 dp */
+transition: all 0.5s ease-in-out;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+form .form-content .btn-login:hover {
+  opacity: 0.8;
+}
+form .form-content .btn-fb {
+  position: relative;
+  text-align: center;
+  width: 442px;
+  height: 63px;
+  background: #1877f2;
+  box-shadow: 0px 38.4869px 71.4756px rgba(0, 0, 0, 0.07);
+  border-radius: 20.9968px;
+  margin-bottom: 10px;
+  padding-bottom: -50px;
+}
+form .form-content .btn-fb .logo-fb {
+  display: inline-block;
+  font-size: 40px;
+}
+form .form-content .btn-fb span {
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 110px;
+  top: 20px;
+}
+.btn-login-fb {
+  margin-top:20px;
+width: 450px;
+}

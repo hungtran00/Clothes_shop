@@ -1,24 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import GlobalStyle from './components/GlobalStyte';
-import { Provider } from 'react-redux';
-import store from './reducers/store/store';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  unstable_HistoryRouter as HistoryRouter,
+} from "react-router-dom";
+import { HomeTemplate } from "./Templates/HomeTemplate/HomeTemplate";
+import Carts from "./Pages/Carts/Carts";
+import Detail from "./Pages/Detail/Detail";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import Profile from "./Pages/Profile/Profile";
+import Register from "./Pages/Register/Register";
+import Search from "./Pages/Search/Search";
+import { Provider } from "react-redux";
+import { store } from "./redux/configStore";
+import { createBrowserHistory } from "history";
+export const history = createBrowserHistory();
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <GlobalStyle>
-        <App />
-      </GlobalStyle>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <HistoryRouter history={history}>
+      <Routes>
+        <Route path="" element={<HomeTemplate />}>
+          <Route index element={<Home />}></Route>
+          <Route path="login" element={<Login />}></Route>
+          <Route path="register" element={<Register />}></Route>
+          <Route path="profile" element={<Profile />}></Route>
+          <Route path="search" element={<Search />}></Route>
+          <Route path="carts" element={<Carts />}></Route>
+          <Route path="detail">
+            <Route path=":id" element={<Detail />}></Route>
+          </Route>
+        </Route>
+      </Routes>
+    </HistoryRouter>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

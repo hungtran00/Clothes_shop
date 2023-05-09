@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    font-family: "Inter", sans-serif !important;
+    list-style: none !important;
+  }
+  
+
+  
+  .product-item {
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 0;
+    width: 400px;
+    height: 550px;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 10px;
+  }
+  .product-item .product-img {
+    text-align: center;
+  }
+    .product-item .product-img img {
+    padding: 45px 57px 30px 57px;
+  }
+    .product-item .product-desc {
+    margin-left: 25px;
+  }
+   .product-item .product-desc h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color:black;
+  }
+   .product-item .product-desc p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #CBC9C9;
+  }
+  .product-item .product-btn {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+    .product-item .product-btn .btn-buy {
+    display: block;
+    width: 100%;
+    background-color: #9DE167;
+    padding: 18px 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+  }
+    .product-item .product-btn .btn-price {
+    display: block;
+    width: 100%;
+    background-color: #DEDDDC;
+    padding: 18px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+  }
+  
+  button{
+    color: white;
+    border:none;
+    box-shadow: none;
+  }
+
+
+.icon-unlike {
+  font-size: 30px;
+  color:#000;
+
+}
+
+.btn-like {
+  background-color: #F8F8F8;
+  padding-left:1.5rem;
+  padding-top:1rem;
+}

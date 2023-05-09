@@ -1,0 +1,166 @@
+.profile-container .profile-input {
+   padding:  50px;
+}
+
+
+.profile-container .profile-image img{
+    border-radius: 50%;
+    
+}
+
+.profile-content .profile-left .form-group {
+    margin-bottom:25px;
+}
+
+.profile-content .profile-right .form-group {
+    margin-bottom:25px;
+
+}
+
+.profile-content .profile-right .gender {
+    align-items: center;
+}
+
+.profile-content .profile-right .gender p {
+    margin-bottom:0;
+}
+.profile-content .profile-right .gender label {
+    font-size:1rem;
+    margin-left:10px;
+}
+
+.profile-content .profile-right .gender input[type="radio"] {
+    width: 25px;
+}
+
+.profile-content .profile-right .gender .male, .profile-content .profile-right .gender .female {
+    align-items: center;
+    display: flex;
+
+}
+
+.btn-update {
+    padding:10px 15px;
+    margin-top:15px;
+    color: white;
+    background-image: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+}
+.btn-update:hover {
+    opacity: 0.8;
+    
+}
+
+.modal-content .gender {
+    align-items: center;
+}
+
+.modal-content .gender p {
+    margin-bottom:0;
+}
+.modal-content .gender label {
+    font-size:1rem;
+    margin-left:10px;
+}
+
+.modal-content .gender input[type="radio"] {
+    width: 25px;
+}
+
+.modal-content .gender .male, .modal-content .gender .female {
+    align-items: center;
+    display: flex;
+
+}
+
+.female-gender{
+    margin-left: 25px;
+}
+
+.modal-content .gender .gender-title {
+    margin-top:25px;
+}
+
+.modal-content .phone {
+    margin-top:15px;
+}
+
+.profile-footer .btn-history {
+font-size:25px;
+padding:10px 25px;
+
+}
+
+.profile-footer .btn-favorite {
+font-size:25px;
+padding:10px 25px;
+outline: var(--color);
+margin-left:25px;
+}
+.profile-footer .btn-footer-profile{
+    margin-bottom:1.5rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: black;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

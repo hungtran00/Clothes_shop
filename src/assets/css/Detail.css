@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    font-family: "Inter", sans-serif !important;
+    list-style: none !important;
+  }
+
+
+  .product-detail .product-img {
+    padding-top: 58px;
+    padding-left: 64px;
+  }
+  .product-detail .product-img .img-trainer{
+    width: 334px;
+    height: 335px;
+    background-color: #F8F8F8;
+    padding: 109px 57px 90px 57px;
+
+  }
+  .product-detail .product-img .img-trainer img{
+    width:220px;
+    height: 156px;
+  }
+  .product-detail .product-describe{
+    padding-top: 67px;
+  }
+  .product-detail .product-describe .describe h1{
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .product-detail .product-describe .describe p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product-detail .product-describe .describe h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1ED90E;
+  }
+  .product-detail .product-describe .describe .btn-size{
+    display: inline-block;
+    background-color: #CCCCCC;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    margin-right: 5px;
+    color:black;
+  }
+  .product-detail .product-describe .describe h2{
+    font-size: 30px;
+    font-weight: 600;
+    color:   #FC0303;
+  }
+  .product-detail .product-describe .describe .plus{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 36.31px;
+  }
+  .product-detail .product-describe .describe .minus{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 36.31px;
+  }
+  .product-detail .product-describe .describe input{
+    font-size: 30px;
+    font-weight: 400;
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px ;
+  }
+  .product-detail .product-describe .describe .btn-add-cart{
+    display: inline-block;
+    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+    width:175px;
+    height: 64px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .related-product{
+    font-size: 40px;
+    font-weight: 400;
+  }

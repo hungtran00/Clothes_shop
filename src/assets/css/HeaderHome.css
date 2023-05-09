@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    font-family: "Inter", sans-serif !important;
+    list-style: none !important;
+  }
+  
+  /*HEADER*/
+  .header {
+    background: black;
+  }
+  .header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header-content .header-left {
+    margin: 10px 0 8px 24px;
+  }
+  .header .header-content .header-right {
+    display: flex;
+    color: white;
+    margin-right: 30px;
+    align-items: center;
+  }
+  .header-login {
+    transition: all 0.5s ease;
+    position: relative;
+    
+  }
+
+  .header-login::after {
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:-5px;
+    width: 0;
+    height: 2px;
+  background: #6200EE;
+  transition: all 0.5s ease;
+  }
+  .header-login:hover {
+    color: #6200EE;
+  }
+
+  .header-login:hover::after{
+    width: 100%;
+  }
+  .header .header-content .header-right .icon-cart {
+    background-image: url(../image/cart.png);
+    width: 31px;
+    height: 31px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+
+  .header .header-content .header-right a {
+    display: block;
+    margin-bottom: 0;
+  }
+  .header .header-content .header-right .num {
+    margin-left:8px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    font-style: normal;
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .header .header-content .header-right .num:hover {
+    color: #6200EE;
+  }
+
+  .profile-name{
+    margin-right:10px;
+    transition: all 0.5s ease;
+  }
+  .profile-name:hover {
+    color:#6200EE;
+  }
+  .header .header-content .header-right .item-list {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    font-style: normal;
+    margin-right:10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+
+
+  .header .header-content .header-right .item-list:hover {
+    color: #6200EE
+  }
+  .header .header-content .header-right .item-list::after {
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:-5px;
+    width: 0;
+    height: 2px;
+  background: white;
+  transition: all 0.5s ease;
+  }
+
+  .header .header-content .header-right .item-list:hover::after {
+    width: 100%;
+    background: #6200EE;
+  }
+
+  .icon-cart {
+    color:white
+  }
+
+
+  .nav .nav-content {
+    padding: 16px 0 10px 25px;
+  }
+  .nav .nav-content .nav-item {
+    margin-right: 25px;
+    color: black;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+  }
+  .nav .nav-content .nav-item.active {
+    font-weight: 400;
+  }
+  .nav .nav-content .nav-item.active::after {
+    width: 98%;
+  }
+  .nav .nav-content .nav-item::after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background: #030303;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  .nav .nav-content .nav-item:hover::after {
+    width: 98%;
+    font-weight: 400;
+  }
